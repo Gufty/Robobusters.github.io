@@ -1107,9 +1107,8 @@ input, select, textarea {
 /* BG */
 
 	#bg {
-
 		width: 100%;
-		height: 100vh;
+		
 		z-index: 1;
 	}
 
@@ -1133,12 +1132,9 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/IMG_4209.png");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
+			background-size: auto,256px 256px;
+			background-position: center,center;
+			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
 
@@ -1172,7 +1168,17 @@ input, select, textarea {
 		body.is-preload #bg:before {
 			background-color: #000000;
 		}
-
+		/*another background for after the full width section*/
+		/*#another-bg {
+			width: 100vw;
+			height: 200vh;
+			background-image: url("../../images/perezDoingStuff.png");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}
+		*/
 /* Wrapper */
 
 	#wrapper {
@@ -1358,14 +1364,34 @@ input, select, textarea {
 				color:#000000; /*this is the text color*/
 				padding: 20px;
 				margin: 20px 0;
+				display: flex;
+				justify-content: space-between;
 				border: 1px solid #ccc;
 				border-radius: 10px;
-				width: 100vw;
-				height: 50vw; /* Set the width to 100% for a full-width section */
+				width: 100vw;/* Set the width to 100vw for a full-width section */
+				height: 50vh;
 				box-sizing: border-box; /* Include padding and border in the total width */
 			}
 			.full-width-section h2 {
+				text-align: center;
 				color: #000; /* Add this to ensure the color for h2 */
+			}
+			.full-width-section p{
+				margin-top: 20px;
+			}
+			.text-content {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;/* Align items to the start (top) of the container */
+				padding: 10px; /* Adjust padding as needed */
+			}
+			.image-content img {
+				flex: 1;
+				padding: 20px;
+				max-width: 100%;
+				max-height: 100%; /* Make sure the image doesn't exceed its container */
 			}
 		#header nav ul {
 			display: -moz-flex;
