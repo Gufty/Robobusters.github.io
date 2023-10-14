@@ -82,6 +82,9 @@ input, select, textarea {
 
 		html, body {
 			min-width: 320px;
+			height: 100%;
+			margin: 0;
+			padding: 0;
 		}
 
 	}
@@ -1133,17 +1136,14 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/IMG_4209.png");
-			background-size: auto,256px 256px;
-			background-position: center,center;
-			background-repeat: no-repeat, repeat;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
 			z-index: 2;
 		}
 
 		#bg:after {
-			-moz-transform: scale(1.125);
-			-webkit-transform: scale(1.125);
-			-ms-transform: scale(1.125);
-			transform: scale(1.125);
+			
 			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
@@ -1201,6 +1201,7 @@ input, select, textarea {
 	justify-content: space-between;
 	position: relative;
 	width: 100%;
+	min-height: 100%;
 	padding-top: 4rem;
 	margin-bottom:0;
 	z-index: 3;
@@ -1269,10 +1270,11 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 3.5rem;/*can fix by turning 3.5rem to 3rem but should find a better fix*/
 			margin-bottom: 0rem;
 		}
-
+			/*this made lines appear that connected everything, we can toggle it back
+			on if we want be uncommenting it
 			#header > *:before {
 				content: '';
 				display: block;
@@ -1283,7 +1285,7 @@ input, select, textarea {
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
 			}
-
+            */
 		#header > :first-child {
 			margin-top: 0;
 		}
@@ -1357,9 +1359,9 @@ input, select, textarea {
 				}
 
 			#header .content p {
-				text-transform: uppercase;
+				
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-size: 2rem;
 				line-height: 2;
 			}
 			.full-width-section {
@@ -1427,8 +1429,10 @@ input, select, textarea {
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					font-size: 1rem;
+					font-weight: bold;
 					border-bottom: 0;
+					background-color: #ffffff2f
 				}
 
 					#header nav ul li a:hover {
@@ -1609,7 +1613,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: rgba(163, 143, 126, 0.85);
 			border-radius: 4px;
 			opacity: 0;
 		}
