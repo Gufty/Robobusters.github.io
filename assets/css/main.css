@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #445065;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -208,9 +208,9 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.5rem;
-		line-height: 1.4;
-		letter-spacing: 0.5rem;
+		font-size: 2rem;
+		line-height: 100%;
+		/*background-color: #e4e2e209;*/
 	}
 
 	h3 {
@@ -650,7 +650,7 @@ input, select, textarea {
 		.image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
-			background-color: rgba(19, 21, 25, 0.5);
+			/*background-color: rgba(19, 21, 25, 0.5);*/
 			border-radius: 4px;
 			content: '';
 			display: block;
@@ -1167,7 +1167,7 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: #445065;
 		}
 		/*another background for after the full width section*/
 		/*#another-bg {
@@ -1351,7 +1351,7 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
-				background-color: #ffffff1c;
+				background-color: #44506555
 			}
 
 				#header .content .inner > :last-child {
@@ -1432,7 +1432,7 @@ input, select, textarea {
 					font-size: 1rem;
 					font-weight: bold;
 					border-bottom: 0;
-					background-color: #ffffff2f
+					background-color:#44506555
 				}
 
 					#header nav ul li a:hover {
@@ -1613,7 +1613,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(163, 143, 126, 0.85);
+			background-color: #454d59cc;
 			border-radius: 4px;
 			opacity: 0;
 		}
