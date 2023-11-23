@@ -155,9 +155,10 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		border-bottom: dotted 4px rgb(255, 255, 255);
 		text-decoration: none;
 		color: inherit;
+		
 	}
 
 		a:hover {
@@ -1112,18 +1113,19 @@ input, select, textarea {
 
 	#bg {
 		width: 100%;
-		
 		z-index: 1;
+		
 	}
 
 		#bg:before, #bg:after {
 			content: '';
 			display: block;
-			position: absolute;
+			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
+			background-attachment: scroll;
 		}
 
 		#bg:before {
@@ -1143,7 +1145,6 @@ input, select, textarea {
 		}
 
 		#bg:after {
-			
 			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
@@ -1153,6 +1154,7 @@ input, select, textarea {
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
+			
 		}
 
 		body.is-article-visible #bg:after {
@@ -1262,6 +1264,7 @@ input, select, textarea {
 		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
+		
 	}
 
 		#header > * {
@@ -1272,20 +1275,8 @@ input, select, textarea {
 			position: relative;
 			margin-top: 3.5rem;/*can fix by turning 3.5rem to 3rem but should find a better fix*/
 			margin-bottom: 0rem;
+			
 		}
-			/*this made lines appear that connected everything, we can toggle it back
-			on if we want be uncommenting it
-			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
-			}
-            */
 		#header > :first-child {
 			margin-top: 0;
 		}
@@ -1332,6 +1323,7 @@ input, select, textarea {
 		}
 
 		#header .content {
+			
 			border-style: solid;
 			border-color: #ffffff;
 			border-top-width: 1px;
@@ -1340,6 +1332,7 @@ input, select, textarea {
 		}
 
 			#header .content .inner {
+				
 				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
 				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1351,7 +1344,7 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
-				background-color: #44506555
+				background-color: #44506555;
 			}
 
 				#header .content .inner > :last-child {
@@ -1366,9 +1359,9 @@ input, select, textarea {
 			}
 			.full-width-section {
 				background-color: #ffffff;
-				color:#000000; /*this is the text color*/
+				color:black; 
 				padding: 20px;
-				margin: 20px 0;
+				margin-top: 10px;
 				display: flex;
 				justify-content: space-between;
 				border: 1px solid #ccc;
@@ -1376,7 +1369,6 @@ input, select, textarea {
 				width: 100vw;/* Set the width to 100vw for a full-width section */
 				height: 50vh;
 				box-sizing: border-box; /* Include padding and border in the total width */
-				
 			}
 			.full-width-section h2 {
 				text-align: center;
@@ -1410,6 +1402,7 @@ input, select, textarea {
 			padding-left: 0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
+			
 		}
 
 			#header nav ul li {
@@ -1700,13 +1693,12 @@ input, select, textarea {
 		width: 100%;
 		max-width: 100%;
 		text-align: center;
-		margin-top: 2rem;
+		margin-top: .2rem;
 	}
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
-			font-size: 0.6rem;
-			opacity: 0.75;
+			font-size: 1rem;
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
