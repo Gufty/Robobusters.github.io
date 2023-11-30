@@ -1204,7 +1204,7 @@ input, select, textarea {
 	position: relative;
 	width: 100%;
 	min-height: 100%;
-	padding-top: 4rem;
+	padding-top: .25rem;
 	margin-bottom:0;
 	z-index: 3;
 	overflow: hidden;
@@ -1296,6 +1296,7 @@ input, select, textarea {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin-right: 50px;
 		}
 		
 		#header .logo img {
@@ -1304,7 +1305,7 @@ input, select, textarea {
     		width: auto;
     		height: auto;
     		display: block;
-    		margin: 0 0 0 -7px; /* Center the image manually because the pic aint centered... */
+    		
 		}
 		/* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 		@media (max-width: 768px) {
@@ -1693,7 +1694,7 @@ input, select, textarea {
 		width: 100%;
 		max-width: 100%;
 		text-align: center;
-		margin-top: .2rem;
+		margin-top: 2rem;
 	}
 
 		#footer .copyright {
